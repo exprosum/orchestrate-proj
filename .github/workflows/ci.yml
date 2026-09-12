@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run Financial Decision Engine
+      run: |
+        python code/main.py
+
+    - name: Run Engine Tests
+      run: |
+        python test_engine.py
+
+    - name: Validate Output Contract
+      run: |
+        python -c "import pandas as pd; df = pd.read_csv('output.csv'); assert len(df) == 250, f'Expected 250 rows, got {len(df)}'; required = ['request_id', 'amount_safe_to_pay', 'affordability_status', 'recommended_payment_method', 'payment_plan', 'earliest_date_for_full_payment', 'spending_changes_needed', 'decision_explanation']; assert list(df.columns) == required, 'Columns do not match'; print('Output contract validated successfully!')"
