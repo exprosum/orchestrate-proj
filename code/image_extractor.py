@@ -61,7 +61,7 @@ def extract_amount_from_image(image_id: str, image_path: Path, event_id: str = "
         )
 
         response = client.models.generate_content(
-            model=os.environ.get("GEMINI_MODEL", "gemini-2.0-flash"),
+            model=os.environ.get("GEMINI_MODEL", "gemini-3.6-flash"),
             contents=[pil_img, prompt]
         )
         text = response.text.strip()
