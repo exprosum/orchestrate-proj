@@ -1,0 +1,18 @@
+{
+  "image_01": { "event_id": "event_253", "user_id": "user_03", "amount": 4365000.0, "currency": "IDR", "description": "Net pay from salary payslip" },
+  "image_02": { "event_id": "event_1442", "user_id": "user_16", "amount": 100000.0, "currency": "INR", "description": "Balance due on rent receipt" },
+  "image_03": { "event_id": "event_1545", "user_id": "user_17", "amount": 41272.0, "currency": "INR", "description": "Cash paid on spice and nuts grocery receipt" },
+  "image_04": { "event_id": "event_1700", "user_id": "user_19", "amount": 2854.0, "currency": "INR", "description": "Item bill total for delivered grocery order" },
+  "image_05": { "event_id": "event_1786", "user_id": "user_20", "amount": 704.05, "currency": "INR", "description": "Total amount due on Airtel business bill" },
+  "image_06": { "event_id": "event_3051", "user_id": "user_33", "amount": 1995.0, "currency": "INR", "description": "Total on Blinkit invoice" },
+  "image_07": { "event_id": "event_3231", "user_id": "user_35", "amount": 8528.0, "currency": "INR", "description": "Grand total on restaurant tax invoice" },
+  "image_08": { "event_id": "event_4535", "user_id": "user_48", "amount": 15339.0, "currency": "INR", "description": "Total amount received for apartment maintenance bill" },
+  "image_09": { "event_id": "event_5170", "user_id": "user_55", "amount": 723.0, "currency": "INR", "description": "Total amount received on water bill" },
+  "image_10": { "event_id": "event_6033", "user_id": "user_64", "amount": 79679.26, "currency": "INR", "description": "Balance due on itemized grocery bill" },
+  "image_11": { "event_id": "event_6859", "user_id": "user_73", "amount": 3650.0, "currency": "INR", "description": "Total bill amount on hospital provisional bill" },
+  "image_12": { "event_id": "event_7307", "user_id": "user_78", "amount": 33.5, "currency": "USD", "description": "Total on CityCab taxi receipt" },
+  "image_13": { "event_id": "event_7941", "user_id": "user_84", "amount": 2298.0, "currency": "INR", "description": "Total paid on DailyObjects order details" },
+  "image_14": { "event_id": "event_9421", "user_id": "user_101", "amount": 4543.0, "currency": "INR", "description": "Total on pharmacy cash memo" },
+  "image_15": { "event_id": "event_9806", "user_id": "user_105", "amount": 9968.0, "currency": "INR", "description": "Total incl taxes on IndiGo flight tax invoice" },
+  "image_16": { "event_id": "event_10521", "user_id": "user_113", "amount": 393.22, "currency": "INR", "description": "Total on EV charging computer generated invoice" }
+}
