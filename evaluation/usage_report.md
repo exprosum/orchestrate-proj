@@ -18,7 +18,7 @@ This submission uses a hybrid AI architecture:
 
 | Role | Provider | Model Name | Version | API Library |
 |---|---|---|---|---|
-| Multimodal Extraction | Google AI Studio | `gemini-2.0-flash` | v1beta | `google-genai` (2.23.0) |
+| Multimodal Extraction | Google AI Studio | `gemini-3.6-flash` / `gemini-2.0-flash` | v1beta | `google-genai` (2.23.0) |
 | Financial Decision Engine | Deterministic Engine | Rule-Based / Timeline Simulation | 1.0 | Pure Python + NumPy |
 
 ---
