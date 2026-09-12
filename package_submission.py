@@ -14,6 +14,7 @@ files_to_zip = [
     ("code/message_parser.py", "code/message_parser.py"),
     ("code/requirements.txt", "code/requirements.txt"),
     ("code/evaluation/usage_report.md", "evaluation/usage_report.md"),
+    ("implementation_plan.md", "implementation_plan.md"),
     ("README.md", "README.md"),
 ]
 
